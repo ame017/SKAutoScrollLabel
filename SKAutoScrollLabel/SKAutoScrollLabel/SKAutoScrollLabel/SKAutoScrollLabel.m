@@ -268,7 +268,8 @@ static void each_object(NSArray *objects, void (^block)(UILabel * label)) {
     [self performSelector:@selector(enableShadow) withObject:nil afterDelay:self.autoScrollInterval];
     
     // 滚动动画
-    [UIView animateWithDuration:duration delay:self.autoScrollInterval options:UIViewAnimationOptionRepeat animations:^{
+    // 添加UIViewAnimationOptionCurveLinear 让动画线型移动,以免造成一会快一会慢的效果
+    [UIView animateWithDuration:duration delay:self.autoScrollInterval options:UIViewAnimationOptionRepeat | UIViewAnimationOptionCurveLinear animations:^{
 
         switch (self.direction) {
             case SK_AUTOSCROLL_DIRECTION_LEFT:

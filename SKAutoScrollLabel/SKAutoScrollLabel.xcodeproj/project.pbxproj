@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3CE8BCD21C9D26B00BB8697 /* SKAutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E3CE8BCC21C9D26B00BB8697 /* SKAutoScrollLabel.m */; };
 		E420D3111E9B747A000B0066 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E420D3101E9B747A000B0066 /* main.m */; };
 		E420D3141E9B747A000B0066 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E420D3131E9B747A000B0066 /* AppDelegate.m */; };
 		E420D3171E9B747A000B0066 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E420D3161E9B747A000B0066 /* ViewController.m */; };
 		E420D31A1E9B747A000B0066 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E420D3181E9B747A000B0066 /* Main.storyboard */; };
 		E420D31C1E9B747A000B0066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E420D31B1E9B747A000B0066 /* Assets.xcassets */; };
 		E420D31F1E9B747A000B0066 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E420D31D1E9B747A000B0066 /* LaunchScreen.storyboard */; };
-		E420D3291E9B7C0F000B0066 /* SKAutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E420D3281E9B7C0F000B0066 /* SKAutoScrollLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E3CE8BCB21C9D26B00BB8697 /* SKAutoScrollLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAutoScrollLabel.h; sourceTree = "<group>"; };
+		E3CE8BCC21C9D26B00BB8697 /* SKAutoScrollLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAutoScrollLabel.m; sourceTree = "<group>"; };
 		E420D30C1E9B747A000B0066 /* SKAutoScrollLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKAutoScrollLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E420D3101E9B747A000B0066 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E420D3121E9B747A000B0066 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -27,8 +29,6 @@
 		E420D31B1E9B747A000B0066 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E420D31E1E9B747A000B0066 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E420D3201E9B747A000B0066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E420D3271E9B7C0F000B0066 /* SKAutoScrollLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAutoScrollLabel.h; sourceTree = "<group>"; };
-		E420D3281E9B7C0F000B0066 /* SKAutoScrollLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAutoScrollLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +42,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E3CE8BCA21C9D26B00BB8697 /* SKAutoScrollLabel */ = {
+			isa = PBXGroup;
+			children = (
+				E3CE8BCB21C9D26B00BB8697 /* SKAutoScrollLabel.h */,
+				E3CE8BCC21C9D26B00BB8697 /* SKAutoScrollLabel.m */,
+			);
+			path = SKAutoScrollLabel;
+			sourceTree = "<group>";
+		};
 		E420D3031E9B7479000B0066 = {
 			isa = PBXGroup;
 			children = (
@@ -61,7 +70,7 @@
 		E420D30E1E9B747A000B0066 /* SKAutoScrollLabel */ = {
 			isa = PBXGroup;
 			children = (
-				E420D3261E9B7846000B0066 /* SKAutoScrollLabel */,
+				E3CE8BCA21C9D26B00BB8697 /* SKAutoScrollLabel */,
 				E420D3121E9B747A000B0066 /* AppDelegate.h */,
 				E420D3131E9B747A000B0066 /* AppDelegate.m */,
 				E420D3151E9B747A000B0066 /* ViewController.h */,
@@ -81,15 +90,6 @@
 				E420D3101E9B747A000B0066 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E420D3261E9B7846000B0066 /* SKAutoScrollLabel */ = {
-			isa = PBXGroup;
-			children = (
-				E420D3271E9B7C0F000B0066 /* SKAutoScrollLabel.h */,
-				E420D3281E9B7C0F000B0066 /* SKAutoScrollLabel.m */,
-			);
-			path = SKAutoScrollLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,7 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E420D3291E9B7C0F000B0066 /* SKAutoScrollLabel.m in Sources */,
+				E3CE8BCD21C9D26B00BB8697 /* SKAutoScrollLabel.m in Sources */,
 				E420D3171E9B747A000B0066 /* ViewController.m in Sources */,
 				E420D3141E9B747A000B0066 /* AppDelegate.m in Sources */,
 				E420D3111E9B747A000B0066 /* main.m in Sources */,
@@ -322,6 +322,7 @@
 				E420D3251E9B747A000B0066 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
