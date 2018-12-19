@@ -49,10 +49,13 @@ static void each_object(NSArray *objects, void (^block)(UILabel * label)) {
     }
     return self;
 }
-
 #pragma mark - 初始化
 - (void)initialize
 {
+    //添加一个APP从后台返回回的回调
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(becomeActive)
+                                                 name:UIApplicationDidBecomeActiveNotification object:nil];
     // 创建label数组
     NSMutableSet * labelSet = [[NSMutableSet alloc] init];
 
@@ -445,5 +448,10 @@ static void each_object(NSArray *objects, void (^block)(UILabel * label)) {
         self.layer.mask = nil;
     }
 }
+#pragma mark - APP从后台返回前台 从新刷新UI
+- (void)becomeActive{
+    [self refreshUI];
+}
+
 
 @end
